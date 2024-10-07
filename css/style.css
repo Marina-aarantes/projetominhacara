@@ -1,10 +1,10 @@
 body {
 
    font-family: Arial, sans-serif;
-    background-color: #1c1c1c;
+    background-color: #DEF4D1;
     color: #fff;
-    margin: 1;
-    padding: 1;
+    margin: auto;
+    padding: auto;
 }
     header {
         padding: 20px;
@@ -13,67 +13,39 @@ body {
         font-weight: bold;
         text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5); /* Deslocamento e sombra */
     }
-    .highlight {
-        color: #fff; 
-    }
-    .highlight2 {
-        color: #c60505;
-    }
-    .category-container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 10px;
-        padding: 20px;
-    }
-    .category {
-        background-color: #333;
-        border-radius: 5px;
-        margin: 5px;
-        padding: 10px;
-        width: 20%;
-        text-align: center;
-        box-shadow: 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .category h2 {
-        margin: 0;
-        font-size: 1.5em;
-        color: #fff;
+    .menu {
+      background-color: #54922E; /* Fundo escuro */
+      overflow: hidden;       /* Garante que não há excesso de conteúdo */
     }
 
-    .movie-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-      }
-      .movie {
-        background-color: #222;
-        padding: 20px;
-        color: white;
-        border-radius: 10px;
-        text-align: center;
-      }
+    /* Remove as bolinhas e o padding da lista */
+    .menu ul {
+      list-style-type: none;  /* Remove as bolinhas da lista */
+      margin: 0;
+      padding: 0;
+      display: flex;          /* Faz os itens ficarem lado a lado */
+    }
 
-      .link-container {
-        position: relative;
-        display: inline-block;
-      }
-  
-      .link-container img {
-        display: block;
-        width: 150;
-        height: 190;
-        margin-left: 15px;
-      }
-  
-      .link-container a {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        text-indent: -9999px; /* Esconde o texto do link */
-        background-color: rgba(0, 0, 0, 0); /* Deixa transparente */
-      }
+    /* Estilo dos itens da lista */
+    .menu ul li {
+      margin: 0;
+    }
 
-     
+    /* Move os itens para a direita */
+    .menu ul li:first-child {
+      margin-left: auto;
+    }
+
+    /* Estilo dos links */
+    .menu ul li a {
+      display: block;
+      color: white;         /* Cor do texto branco */
+      text-align: center;     /* Alinha o texto ao centro */
+      padding: 14px 20px;     /* Espaçamento interno */
+      text-decoration: none;  /* Remove sublinhado */
+    }
+
+   
+    .menu ul li a:hover {
+      background-color: #00ff4c; /* Muda a cor de fundo ao passar o mouse */
+    }
